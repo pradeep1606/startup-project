@@ -1,13 +1,15 @@
 'use client'
 
-import CollegeBar from "@/components/CollegeBar"
+import CollegeHome from "@/components/CollegeHome"
 import Carousel from "../components/Carousel"
+import CoursesHome from "@/components/CoursesHome"
 
 const page = () => {
   return (
     <>
       <Carousel />
-      <CollegeBar />
+      <CoursesHome />
+      <CollegeHome />
     </>
   )
 }

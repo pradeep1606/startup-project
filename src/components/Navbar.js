@@ -1,6 +1,7 @@
 // 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
       <nav className="bg-white border-gray-200 shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" className="flex items-center">
-            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
+            <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" width={50} height={50} alt="Flowbite Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap">TopCollege</span>
           </a>
           <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">

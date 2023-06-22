@@ -1,8 +1,9 @@
-'use client'
+// 'use client'
 
 import CollegeHome from "@/components/CollegeHome"
 import Carousel from "../components/Carousel"
 import CoursesHome from "@/components/CoursesHome"
+import HomeStrip from "@/components/HomeStrip"
 
 const page = () => {
   return (
@@ -10,6 +11,7 @@ const page = () => {
       <Carousel />
       <CoursesHome />
       <CollegeHome />
+      <HomeStrip />
     </>
   )
 }

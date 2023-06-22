@@ -1,10 +1,15 @@
+"use client"
 
-const Contact = () => {
+import Image from 'next/image';
+import Link from 'next/link';
+
+const Navbar = () => {
+
   return (
     <>
-      <div>Contact Us</div>
+    About us
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Navbar;

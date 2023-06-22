@@ -1,22 +1,18 @@
+"use client"
+
 import React, { useState, useEffect } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 
 const Carousel = () => {
   const slides = [
     {
-      url: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80',
+      url: '/images/1.jpeg',
     },
     {
-      url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+      url: '/images/2.jpeg',
     },
     {
-      url: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80',
+      url: '/images/3.jpeg',
     },
   ];
 
@@ -50,11 +46,11 @@ const Carousel = () => {
 
   return (
     <>
-      <div className='h-[500px] w-full m-auto relative group'>
+      <div className='md:h-[500px] h-[350px] w-full m-auto relative group'>
         <div
           style={{
-            backgroundImage: `url(${slides[currentIndex].url})`,
-            opacity: 0.7, // Adjust the opacity value as desired
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(${slides[currentIndex].url})`,
+            // opacity: 0.7, // Adjust the opacity value as desired
           }}
           className='w-full h-full bg-center bg-cover duration-500'
         ></div>
@@ -67,11 +63,11 @@ const Carousel = () => {
                 <AiOutlineSearch />
               </div>
             </div>
-            <button className='w-2/12 bg-blue-700 text-white rounded-r-lg'>Search</button>
+            <button className='md:w-2/12 w-[20%] bg-blue-700 text-white rounded-r-lg'>Search</button>
           </div>
 
           <div className='mt-8'>
-            <button className='bg-blue-700 text-white px-10 py-[0.4rem] rounded-md'>Admission Now</button>
+            <button className='bg-blue-700 text-white px-10 py-[0.4rem] rounded-md'>Admission 2023</button>
           </div>
 
         </div>

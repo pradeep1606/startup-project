@@ -5,17 +5,16 @@ import Link from 'next/link'
 const CoursesHome = () => {
     return (
         <>
-            <div className='pt-8 px-32 bg-white'>
+            <div className='pt-8 px-4 sm:px-8 md:px-16 lg:px-32 bg-white'>
                 <div className='p-4 text-3xl text-[#262626] font-bold'>Choose Your Course</div>
-                <div className='p-4 grid grid-cols-4 gap-8 '>
-
+                <div className='p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
                     {/* Engineering */}
                     <div className='p-4 grid grid-rows-3 border border-gray-300 rounded'>
                         <div className='grid grid-cols-3'>
                             <div className='border border-gray-300 rounded-full p-2'>
                                 <Image src='/logo/engineering.png' width={50} height={50} alt="" />
                             </div>
-                            <div className='col-span2 p-2 text-[#262626] font-bold font-serif text-lg'>Engineering</div>
+                            <div className='col-span-2 p-2 text-[#262626] font-bold font-serif text-lg'>Engineering</div>
                         </div>
                         <div className='row-span-2 divide-y space-y-3 flex flex-col pt-4 text-gray-600 font-sans'>
                             <Link href='#'>BE/B.Tech</Link>
@@ -30,7 +29,7 @@ const CoursesHome = () => {
                             <div className='border border-gray-300 rounded-full p-2'>
                                 <Image src='/logo/pharmacy.png' width={50} height={50} alt="" />
                             </div>
-                            <div className='col-span2 p-2 text-[#262626] font-bold font-serif text-lg'>Pharmacy</div>
+                            <div className='col-span-2 p-2 text-[#262626] font-bold font-serif text-lg'>Pharmacy</div>
                         </div>
                         <div className='row-span-2 divide-y space-y-3 flex flex-col pt-4 text-gray-600 font-sans'>
                             <Link href='#'>B.Pharma</Link>
@@ -45,7 +44,7 @@ const CoursesHome = () => {
                             <div className='border border-gray-300 rounded-full p-2'>
                                 <Image src='/logo/management1.png' width={50} height={50} alt="" />
                             </div>
-                            <div className='col-span2 p-2 text-[#262626] font-bold font-serif text-lg'>Management</div>
+                            <div className='col-span-2 p-2 text-[#262626] font-bold font-serif text-lg'>Management</div>
                         </div>
                         <div className='row-span-2 divide-y space-y-3 flex flex-col pt-4 text-gray-600 font-sans'>
                             <Link href='#'>BBA</Link>
@@ -60,7 +59,7 @@ const CoursesHome = () => {
                             <div className='border border-gray-300 rounded-full p-2'>
                                 <Image src='/logo/art.png' width={50} height={50} alt="" />
                             </div>
-                            <div className='col-span2 p-2 text-[#262626] font-bold font-serif text-lg'>Arts</div>
+                            <div className='col-span-2 p-2 text-[#262626] font-bold font-serif text-lg'>Arts</div>
                         </div>
                         <div className='row-span-2 divide-y space-y-3 flex flex-col pt-4 text-gray-600 font-sans'>
                             <Link href='#'>BA</Link>
@@ -70,6 +69,7 @@ const CoursesHome = () => {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
